@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>bday</title>
+</head>
+
+<body>
+    <div class="wish">
+        <h1>Happy Birthday</h1>
+    </div>
+    <div class="name">
+        <h2>Aman</h2>
+    </div>
+    <div class="container">
+        <div id="carousel">
+            <figure><img src="pictures/img1.jpeg" alt=""></figure>
+            <figure><img src="pictures/img2.jpeg" alt=""></figure>
+            <figure><img src="pictures/img3.jpeg" alt=""></figure>
+            <figure><img src="pictures/img4.jpeg" alt=""></figure>
+            <figure><img src="pictures/img5.jpeg" alt=""></figure>
+            <figure><img src="pictures/img6.jpeg" alt=""></figure>
+            <figure><img src="pictures/img7.jpeg" alt=""></figure>
+            <figure><img src="pictures/img8.jpeg" alt=""></figure>
+            <figure><img src="pictures/img9.jpeg" alt=""></figure>
+        </div>
+    </div>
+    <div class="button">
+        <a href="wish.html"><i class="fa fa-chevron-circle-down fa-3x"></i></a>
+    </div>
+    <script>
+
+
+
+        alert("click somewhere on this wishing page ❤️to have some magic");
+
+setInterval(()=>{
+  let r =Math.floor( Math.random()* imagess.length);
+  i.src = imagess[r];
+
+
+},5000);
+
+let c = 1;
+document.addEventListener('click',() =>{
+if(c==1){
+  let audio = new Audio('audio.mp3'); //add your song link here
+  audio.play();
+  c = c+1}
+
+});
+
+  </script>
+
+</body>
+
+</html>

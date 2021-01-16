@@ -1,0 +1,355 @@
+@media (min-width: 319px) and (max-width: 1029px) {
+  @import url(https://fonts.googleapis.com/css?family=Anaheim);
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    min-height: 100%;
+  }
+  body {
+    background-image: linear-gradient(to bottom, #200122, #6f0000);
+  }
+  h1 {
+    padding-top: 27%;
+    display: table;
+    margin: 4% auto 0;
+    font-family: "Sacramento", cursive;
+    font-size: 8.5em;
+    font-weight: 400;
+  }
+  .wish {
+    animation: animate 2s linear infinite;
+    text-align: center;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      color: #fff;
+      filter: blur(2px);
+      text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+        0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff,
+        0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    }
+    20%,
+    80% {
+      color: #222;
+      filter: blur(0px);
+      text-shadow: 0 0 10px none;
+    }
+  }
+  h2 {
+    display: table;
+    margin: 1% auto 0;
+    font-family: "Sacramento", cursive;
+    font-size: 7.5em;
+    font-weight: 400;
+  }
+  .name {
+    animation: nextanimate 2s linear infinite;
+    text-align: center;
+  }
+  @keyframes nextanimate {
+    0%,
+    100% {
+      color: #fff;
+      filter: blur(2px);
+      text-shadow: 0 0 15px #7fff00, 0 0 20px #7fff00, 0 0 40px #7fff00,
+        0 0 80px #7fff00, 0 0 120px #7fff00, 0 0 200px #7fff00,
+        0 0 300px #7fff00, 0 0 400px #7fff00;
+    }
+    20%,
+    80% {
+      color: #222;
+      filter: blur(0px);
+      text-shadow: 0 0 10px none;
+    }
+  }
+  .container {
+    margin: 4% auto;
+    width: 210px;
+    height: 140px;
+    position: absolute;
+    top: 45%;
+    left: 39%;
+    perspective: 1000px;
+  }
+  #carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+  }
+  #carousel:hover {
+    animation-play-state: paused;
+  }
+  #carousel figure {
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 116px;
+    left: 10px;
+    top: 10px;
+    background: black;
+    overflow: hidden;
+    border: solid 5px black;
+  }
+  #carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(288px);
+  }
+  img {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: 100%;
+  }
+  img:hover {
+    transform: scale(1.2, 1.2);
+  }
+  @keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  .button {
+    position: absolute;
+    top: 73%;
+    left: 44.5%;
+    color: #7fff00;
+    border-radius: 50%;
+    border: transparent 2px;
+    box-shadow: 0 0 18px #7fff00;
+    padding: 0 10px;
+    font-size: 3em;
+    animation: icon 5s linear infinite;
+  }
+  @keyframes icon {
+    0% {
+      color: #7fff00;
+      box-shadow: 0 0 22px #7fff00;
+      transform: translateY(-10px);
+    }
+    90% {
+      transform: translateY(15px);
+      color: #00b3ff;
+      box-shadow: 0 0 22px #00b3ff;
+    }
+    100% {
+      transform: translate(0px);
+    }
+  }
+  a {
+    color: #7fff00;
+  }
+}
+
+@media (min-width: 1030px) {
+  @import url(https://fonts.googleapis.com/css?family=Anaheim);
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    min-height: 100%;
+  }
+  body {
+    background-image: linear-gradient(to bottom, #200122, #6f0000 100%);
+  }
+  h1 {
+    display: table;
+    margin: 4% auto 0;
+    font-family: "Sacramento", cursive;
+    font-size: 6em;
+    font-weight: 400;
+  }
+  .wish {
+    animation: animate 2s linear infinite;
+    text-align: center;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      color: #fff;
+      filter: blur(2px);
+      text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+        0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff,
+        0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    }
+    20%,
+    80% {
+      color: #222;
+      filter: blur(0px);
+      text-shadow: 0 0 10px none;
+    }
+  }
+  h2 {
+    display: table;
+    margin: 1% auto 0;
+    font-family: "Sacramento", cursive;
+    font-size: 6em;
+    font-weight: 400;
+  }
+  .name {
+    animation: nextanimate 2s linear infinite;
+    text-align: center;
+  }
+  @keyframes nextanimate {
+    0%,
+    100% {
+      color: #fff;
+      filter: blur(2px);
+      text-shadow: 0 0 15px #7fff00, 0 0 20px #7fff00, 0 0 40px #7fff00,
+        0 0 80px #7fff00, 0 0 120px #7fff00, 0 0 200px #7fff00,
+        0 0 300px #7fff00, 0 0 400px #7fff00;
+    }
+    20%,
+    80% {
+      color: #222;
+      filter: blur(0px);
+      text-shadow: 0 0 10px none;
+    }
+  }
+  .container {
+    margin: 4% auto;
+    width: 210px;
+    height: 140px;
+    position: relative;
+    perspective: 1000px;
+  }
+  #carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+  }
+  #carousel:hover {
+    animation-play-state: paused;
+  }
+  #carousel figure {
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 116px;
+    left: 10px;
+    top: 10px;
+    background: black;
+    overflow: hidden;
+    border: solid 5px black;
+  }
+  #carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(288px);
+  }
+  #carousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(288px);
+  }
+  img {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: 100%;
+  }
+  img:hover {
+    transform: scale(1.2, 1.2);
+  }
+  @keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  .button {
+    position: absolute;
+    top: 85%;
+    left: 48%;
+    color: #7fff00;
+    border-radius: 50%;
+    border: transparent 2px;
+    box-shadow: 0 0 15px #7fff00;
+    padding: 0 4px;
+    animation: icon 5s linear infinite;
+  }
+  @keyframes icon {
+    0% {
+      color: #7fff00;
+      box-shadow: 0 0 18px #7fff00;
+      transform: translateY(-10px);
+    }
+    90% {
+      transform: translateY(15px);
+      color: #00b3ff;
+      box-shadow: 0 0 18px #00b3ff;
+    }
+    100% {
+      transform: translate(0px);
+    }
+  }
+  a {
+    color: #7fff00;
+  }
+}
